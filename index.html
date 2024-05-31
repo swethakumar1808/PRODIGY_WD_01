@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page </title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Error loading">
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li class="active">Variety</li>
+                <li>Offer</li>
+                <li>About Us</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>    
+
+    <section class="main">
+
+            <section class="left">
+                <p class="title">Burger Point</p>
+                <p class="msg1">We believe that great burgers start with the finest ingredients and a passion for culinary excellence.
+                    Step into a world where every bite is a celebration of flavors, where quality meets creativity, and
+                    where your cravings are satisfied with the best in town.</p>
+                <button class="cta">Order Noe</button>
+            </section>
+
+            <section class="right">
+                <img src="Images/burger2.png" alt="Landing Image">
+            </section>
+
+    </section>
+    <section>
+        <h2 class="choose">CHOOSE & ENJOY</h2>
+        <div class="burger-container">
+            <div class="burger-item">
+                <img src="Images/burger2.png" alt="">
+                <h2 class="center color-primary burger-heading">Burger 1</h2>
+                <p class="center msg">Crispy chicken breast, Nasville Hot seasoned Mac n' Cheese smashed on our grill to create a crispy baked cheese layer, American cheese, toasted bun</p>
+                <button class="cta btn2">Order Now</button>
+            </div>
+            <div class="burger-item">
+                <img src="Images/burger.png" alt="">
+                <h2 class="center color-primary burger-heading">Burger 2</h2>
+                <p class="center msg">Crispy chicken breast, Mac n' Cheese smashed on our grill to create a crispy baked cheese layer, American cheese, toasted bun</p>
+                <button class="cta btn2">Order Now</button>
+            </div>
+            <div class="burger-item">
+                <img src="Images/burger2.png" alt="">
+                <h2 class="center color-primary burger-heading">Burger 3</h2>
+                <p class="center msg">Crispy chicken breast, lettuce, tomatoes, red onions, mayo, toasted bun</p>
+                <button class="cta btn2">Order Now</button>
+            </div>
+        </div>
+    </section>
+    <section id="burger-footer">
+            <div class="footer-bg">
+                <img src="logo.png" alt="">
+                <div class="left-footer">
+                    <p class="color-white para-font"><p>&copy; 2023 Burger Company. All rights reserved. | Designed by Priyanshu Chandra</p></p>
+                </div>  
+            </div>
+        </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('opened')
+        })
+
+    </script>
+
+</body>
+</html>
